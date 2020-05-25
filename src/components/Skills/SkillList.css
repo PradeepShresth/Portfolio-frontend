@@ -1,0 +1,32 @@
+.skill-list {
+    list-style: none;
+    overflow: auto;
+    margin: auto;
+    width: 92%;
+    padding-bottom: 20px;
+  }
+  
+.skill-list li {
+    float:left;
+    width:23%;
+    margin: 8px;
+}
+
+.skill-list__title {
+    display: inline-block;
+    padding-left: 22%;
+}
+
+.skill-btn {
+    float: right;
+    background-color: #1e8f73;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    width: 200px;
+    padding: 10px;
+    margin: 20px 50px;
+}

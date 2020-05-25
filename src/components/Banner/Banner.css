@@ -1,0 +1,25 @@
+.Banner {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.banner-content {
+    margin: auto;
+    
+    overflow: auto;
+    width: 90%;
+}
+
+.banner-btn {
+    display: block;
+    background-color: #1e8f73;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 10px;
+    width: 200px;
+    margin: auto;
+}

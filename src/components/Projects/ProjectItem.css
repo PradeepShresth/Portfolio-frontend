@@ -1,0 +1,17 @@
+.project-item {
+    text-align: left;
+}
+
+.project-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.project-image {
+    height: 300px;
+}
+
+.project-item h1 {
+    padding-left: 25px;
+    font-size: 25px;
+}

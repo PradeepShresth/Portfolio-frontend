@@ -1,0 +1,32 @@
+.git-list {
+    list-style: none;
+    margin: 1rem auto;
+    overflow: auto;
+    width: 92%;
+    padding-bottom: 20px;
+  }
+  
+.git-list li {
+    float:left;
+    width:31%;
+    margin: 8px;
+}
+
+.git-list__title {
+    display: inline-block;
+    padding-left: 22%;
+}
+
+.git-btn {
+    float: right;
+    background-color: #1e8f73;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 10px;
+    width: 200px;
+    margin: 20px 50px;
+}

@@ -1,0 +1,15 @@
+.git-item {
+    text-align: center;
+}
+
+.git-item h1 {
+    font-size: 20px;
+}
+
+.git-item p {
+    color: #1e8f73;
+}
+
+.git-item div {
+    padding: 10px;
+}

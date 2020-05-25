@@ -1,0 +1,107 @@
+.banner-contain {
+    width: 50%;
+    object-fit: contain;
+    overflow: hidden;
+    float: left;
+}
+
+.banner-profile{
+    width: 45%;
+}
+
+.banner-profile div {
+  display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    height: 0;
+    padding-bottom: 100%;
+}
+
+.banner-info {
+    text-align: left;
+    /* background-color: red; */
+    margin-top: 10%;
+}
+
+.banner-info div {
+  /* background-color: yellow; */
+  padding-left: 28%;
+  width: auto;
+}
+
+.banner-info h1,
+.banner-info h3,
+.banner-info p{
+    margin: 0;
+    padding: 0;
+    /* font-weight: 300; */
+}
+
+.banner-info  h3{
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.banner-info  h1{
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.banner-info  p{
+  font-size: 18px;
+  font-weight: lighter;
+  padding-bottom: 20px;
+}
+
+.profile-img {
+    width: 152%;
+    margin-left: -50px;
+}
+
+.banner-contain ul {
+    margin: 0;
+    padding: 0;
+    /* list-style: none; */
+    /* padding-right: 10%; */
+    /* background-color: red; */
+    /* margin: auto; */
+}
+
+.banner-contain ul li {
+    display:inline-block;
+}
+
+.fa {
+    padding: 8px;
+    font-size: 18px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20%;
+    margin: 8px;
+  }
+  
+.fa:hover {
+    opacity: 0.7;
+}
+  
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+  
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+  
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+  
+.fa-instagram {
+    background: #125688;
+    color: white;
+}

@@ -1,0 +1,40 @@
+.git__add-btn {
+    background-color: #1e8f73;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.git__cancel-btn {
+    background-color: #c20c0c;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.form-control {
+  }
+
+.form-control input {
+  margin: auto;
+  width: 400px;
+}
+
+.form-control input,
+.form-control textarea {
+  display: block;
+  margin-top: 10px;
+}
+  

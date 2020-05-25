@@ -1,0 +1,32 @@
+.project-list {
+    overflow: auto;
+    list-style: none;
+    margin: 1rem auto;
+    width: 92%;
+    padding-bottom: 20px;
+  }
+  
+.project-list li {
+    float:left;
+    width:31%;
+    margin: 8px;
+}
+
+.project-list__title {
+    display: inline-block;
+    padding-left: 22%;
+}
+
+.project-btn {
+    float: right;
+    background-color: #1e8f73;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    width: 200px;
+    padding: 10px;
+    margin: 20px 50px;
+}

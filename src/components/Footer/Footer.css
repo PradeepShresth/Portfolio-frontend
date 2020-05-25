@@ -1,0 +1,29 @@
+footer {
+    padding:20px 15%;
+    margin-top:20px;
+    color:#ffffff;
+    background-color:#1e8f73;
+    text-align: center;
+}
+
+footer div{
+    display: inline-block;
+}
+
+.footer-about {
+    width: 65%;;
+}
+
+.footer-contact {
+    text-align: left;
+    width: 35%;
+    /* background-color: yellow; */
+}
+
+.footer-contact ul {
+    list-style: none;
+}
+
+.footer-contact ul li p{
+    display: inline-block;
+}

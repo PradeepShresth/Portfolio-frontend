@@ -1,0 +1,16 @@
+.banner-main {
+    background-color: white;
+    padding-top: 80px;
+}
+
+.banner-container {
+    width: 80%;
+    /* background-color: red; */
+    margin: auto;
+}
+
+.body-content {
+    width: 80%;
+    /* background-color: red; */
+    margin: auto;
+}

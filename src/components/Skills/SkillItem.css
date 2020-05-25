@@ -1,0 +1,11 @@
+/* .skill-item {
+    padding-top: 100px;
+} */
+
+.skill-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    height: 200px;
+}
