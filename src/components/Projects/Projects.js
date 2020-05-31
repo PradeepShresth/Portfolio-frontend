@@ -10,7 +10,7 @@ class Projects extends Component {
     }
 
     componentDidMount () {
-        axios.get('http://localhost:8080/api/project')
+        axios.get(process.env.REACT_APP_BACKEND_URL + '/project')
             .then(response => {
                 const projects  = response.data.projects;
                 this.setState({projects: projects});

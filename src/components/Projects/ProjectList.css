@@ -4,7 +4,7 @@
     margin: 1rem auto;
     width: 92%;
     padding-bottom: 20px;
-  }
+}
   
 .project-list li {
     float:left;
@@ -14,7 +14,7 @@
 
 .project-list__title {
     display: inline-block;
-    padding-left: 22%;
+    padding-left: 0%;
 }
 
 .project-btn {
@@ -29,4 +29,32 @@
     width: 200px;
     padding: 10px;
     margin: 20px 50px;
+}
+
+@media (max-width: 768px) {  
+    .project-list li {
+        width: 28%;
+    }
+
+    .project-list__title {
+        display: inline-block;
+        font-size: 20px;
+        padding-left: 0;
+    }
+    
+    .project-btn {
+        width: 100px;
+        padding: 7px;
+        margin: 10px 50px;
+    }
+}
+  
+@media (max-width: 425px) {
+    .project-list li {
+        width: 40%;
+    }
+
+    .project-list__title {
+        padding: 0;
+    }
 }

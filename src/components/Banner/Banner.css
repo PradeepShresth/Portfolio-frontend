@@ -5,9 +5,9 @@
 
 .banner-content {
     margin: auto;
-    
     overflow: auto;
     width: 90%;
+    max-height: 630px;
 }
 
 .banner-btn {
@@ -23,3 +23,15 @@
     width: 200px;
     margin: auto;
 }
+
+/* @media (max-width: 768px) {
+    nav {
+      padding-left: 60px;
+    }
+}
+
+@media (max-width: 425px) {
+    nav {
+        display: none;
+    }
+} */

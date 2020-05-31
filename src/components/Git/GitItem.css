@@ -1,5 +1,7 @@
 .git-item {
     text-align: center;
+    display: block;
+    width: 100px;
 }
 
 .git-item h1 {
@@ -12,4 +14,22 @@
 
 .git-item div {
     padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .git-item h1 {
+        font-size: 15px;
+    }
+    
+    .git-item p {
+        font-size: 14px;
+    }
+    
+    .git-item div {
+        padding: 2px;
+    }
+}
+
+@media (max-width: 425px) {
+
 }

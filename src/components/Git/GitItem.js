@@ -10,12 +10,14 @@ const GitItem = props => {
             {props.gits.map(git => {
                 return (
                     <li key={git.id} className="git-item">
-                        <Card className="card-medium">
-                            <div>
-                                <h1>{git.title}</h1>
-                                <p>{git.link}</p>
-                            </div>
-                        </Card>
+                        <a href={git.link}>
+                            <Card className="card-medium">
+                                <div>
+                                    <h1>{git.title}</h1>
+                                    <p>{git.link}</p>
+                                </div>
+                            </Card>
+                        </a>
                     </li>
                 );
             })}

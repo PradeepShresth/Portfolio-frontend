@@ -10,7 +10,7 @@ class Gits extends Component {
     }
 
     componentDidMount () {
-        axios.get('http://localhost:8080/api/git')
+        axios.get(process.env.REACT_APP_BACKEND_URL + '/git')
             .then(response => {
                 const gits  = response.data.gits;
                 this.setState({gits: gits});

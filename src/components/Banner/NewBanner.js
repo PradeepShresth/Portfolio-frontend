@@ -31,7 +31,7 @@ const NewBanner = props => {
         data.append("address", address);
     
         try {
-            await axios.post("http://localhost:8080/api/banner", data)
+            await axios.post(process.env.REACT_APP_BACKEND_URL + "/banner", data)
         } catch (err) {
             console.log(err);
         }

@@ -25,12 +25,13 @@ class Portfolio extends Component {
         project_adding: false,
         git_adding: false,
         banner: {},
+        skills: [],
         show: true,
         showButtons: false
     }
 
     componentDidMount () {
-        axios.get('http://localhost:8080/api/banner')
+        axios.get(process.env.REACT_APP_BACKEND_URL + '/banner')
             .then(response => {
                 const banner  = response.data.banner;
                 if (banner) {
@@ -43,7 +44,7 @@ class Portfolio extends Component {
                 console.log(error);
             });
 
-        axios.get('http://localhost:8080/api/add')
+        axios.get(process.env.REACT_APP_BACKEND_URL + '/add')
             .then(response => {
                 const add  = response.data.showButtons;
                 const s_btn = add[0].adding;
@@ -53,6 +54,15 @@ class Portfolio extends Component {
             .catch(error => {
                 console.log(error);
             });
+
+        axios.get(process.env.REACT_APP_BACKEND_URL + '/skill')
+        .then(response => {
+            const skills  = response.data.skills;
+            this.setState({skills: skills});
+        })
+        .catch(error => {
+            console.log(error);
+        });
     }
 
 /// SHOW ADD BUTTONS----------------------------------
@@ -62,7 +72,7 @@ class Portfolio extends Component {
         }
     
         try {
-            await axios.patch("http://localhost:8080/api/add", data)
+            await axios.patch(process.env.REACT_APP_BACKEND_URL + "/add", data)
         } catch (err) {
             console.log(err);
         }
@@ -80,6 +90,16 @@ class Portfolio extends Component {
     }
     
 /// SKILLS-----------------------------------------------------
+
+    addNewSkillHandler = newGoal => {
+        this.setState(state => {
+            const skills = state.skills.concat(newGoal);
+            console.log(skills);
+            return {
+              skills
+            };
+        });
+    };
 
     skillAddingHandler = () => {
         this.setState({skill_adding: true});
@@ -116,7 +136,7 @@ class Portfolio extends Component {
                     <NewBanner cancel={this.bannerCancelHandler} />
                 </Modal>
                 <Modal show={this.state.skill_adding} modalClosed={this.skillCancelHandler}>
-                    <NewSkill cancel={this.skillCancelHandler} />
+                    <NewSkill cancel={this.skillCancelHandler} onAddSkill={this.addNewSkillHandler} />
                 </Modal>
                 <Modal show={this.state.project_adding} modalClosed={this.projectCancelHandler}>
                     <NewProject cancel={this.projectCancelHandler} />
@@ -134,7 +154,7 @@ class Portfolio extends Component {
                 </div>
                 
                 <div className="body-content">
-                    <Skills className="skills-main" added={this.skillAddingHandler} showButtons={this.state.showButtons} />
+                    <Skills className="skills-main" added={this.skillAddingHandler} showButtons={this.state.showButtons} skills={this.state.skills} />
                     <Projects className="projects-main" added={this.projectAddingHandler} showButtons={this.state.showButtons} />
                     <Gits added={this.gitAddingHandler} showButtons={this.state.showButtons} />
                 </div>

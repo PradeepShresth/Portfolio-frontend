@@ -16,6 +16,20 @@
   height: 120px;
 }
 
-.card-big {
+/* .card-big {
   height: 380px;
+} */
+
+@media (max-width: 768px) {
+  .card-small {
+    height: 50px;
+  }
+  
+  /* .card-medium {
+    height: 120px;
+  } */
+/*   
+  .card-big {
+    height: 260px;
+  } */
 }

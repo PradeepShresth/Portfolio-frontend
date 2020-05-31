@@ -8,7 +8,7 @@ const BannerItem = props => {
             {!props.show && props.banner && ( 
                 <div>
                     <div className="banner-contain banner-profile">
-                        <div><img className="profile-img" src={`http://localhost:8080/${props.banner.image}`} alt="profile" /></div>
+                        <div><img className="profile-img" src={`${process.env.REACT_APP_IMAGE_URL}/${props.banner.image}`} alt="profile" /></div>
                     </div>
                     <div className="banner-contain banner-info">
                         <div>

@@ -8,16 +8,16 @@ import './MainNavigation.css';
 const MainNavigation = props => {
     return (
         <MainHeader>
-            <button className="main-navigation__menu-btn">
+            {/* <button className="main-navigation__menu-btn">
                 <span />
                 <span />
                 <span />
-            </button>
+            </button> */}
             {props.banner &&
                 <a href="/">
                     <div className="main-navigation__menu-title">
                         <div className="nav-img">
-                            <img src={`http://localhost:8080/${props.banner.image}`} alt="profile"  />
+                            <img src={`${process.env.REACT_APP_IMAGE_URL}/${props.banner.image}`} alt="profile"  />
                         </div>
                         <div>
                             <h1>

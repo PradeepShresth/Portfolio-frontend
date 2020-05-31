@@ -13,7 +13,7 @@ const ProjectItem = props => {
                     <li key={project.id} className="project-item">
                         <a href={project.link}>
                             <Card className="card-big">
-                                <img className="project-image" src={`http://localhost:8080/${project.image}`} alt="project_image" />
+                                <img className="project-image" src={`${process.env.REACT_APP_IMAGE_URL}/${project.image}`} alt="project_image" />
                                 <h1>{project.title}</h1>
                             </Card>
                         </a>

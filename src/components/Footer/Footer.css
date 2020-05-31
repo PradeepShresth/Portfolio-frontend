@@ -1,23 +1,21 @@
 footer {
     padding:20px 15%;
-    margin-top:20px;
     color:#ffffff;
     background-color:#1e8f73;
     text-align: center;
+    height: 300px;
 }
 
 footer div{
-    display: inline-block;
+    float: left;
 }
 
 .footer-about {
-    width: 65%;;
+    width: 60%;;
 }
 
 .footer-contact {
     text-align: left;
-    width: 35%;
-    /* background-color: yellow; */
 }
 
 .footer-contact ul {
@@ -26,4 +24,49 @@ footer div{
 
 .footer-contact ul li p{
     display: inline-block;
+}
+
+.footer-contact ul li {
+    height: 40px;
+}
+
+@media (max-width: 768px) {
+    /* footer {
+        padding:20px 15%;
+        color:#ffffff;
+        background-color:#1e8f73;
+        text-align: center;
+        height: 300px;
+    } */
+    
+    footer div h1{
+        font-size: 15px;
+    }
+    
+    footer div p{
+        font-size: 14px;
+    }
+    
+    .footer-about {
+        width: 45%;;
+    }
+    
+    .footer-contact ul li p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 425px) {
+    .footer-about {
+        display: none;
+    }
+
+    .footer-contact {
+        padding-left: 20px;
+    }
+    
+    footer {
+        padding:0;
+        height: 200px;
+    }
 }

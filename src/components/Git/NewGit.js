@@ -16,7 +16,7 @@ const NewGit = props => {
         }
     
         try {
-            await axios.post("http://localhost:8080/api/git", data)
+            await axios.post(process.env.REACT_APP_BACKEND_URL + "/git", data)
         } catch (err) {
             console.log(err);
         }

@@ -12,7 +12,7 @@ const SkillItem = props => {
                 return (
                     <li key={skill.id} className="skill-item">
                         <Card className="card-small">
-                            <img className="skill-image" src={`http://localhost:8080/${skill.image}`} alt="skill_image" />
+                            <img className="skill-image" src={`${process.env.REACT_APP_IMAGE_URL}/${skill.image}`} alt="skill_image" />
                         </Card>
                     </li>
                 );

@@ -19,7 +19,7 @@ const NewProject = props => {
         console.log(link);
     
         try {
-            await axios.post("http://localhost:8080/api/project", data)
+            await axios.post(process.env.REACT_APP_BACKEND_URL + "/project", data)
         } catch (err) {
             console.log(err);
         }

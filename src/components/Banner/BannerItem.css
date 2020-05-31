@@ -7,10 +7,10 @@
 
 .banner-profile{
     width: 45%;
+    max-width: 600px;
 }
 
 .banner-profile div {
-  display: inline-block;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
@@ -20,12 +20,10 @@
 
 .banner-info {
     text-align: left;
-    /* background-color: red; */
     margin-top: 10%;
 }
 
 .banner-info div {
-  /* background-color: yellow; */
   padding-left: 28%;
   width: auto;
 }
@@ -35,7 +33,6 @@
 .banner-info p{
     margin: 0;
     padding: 0;
-    /* font-weight: 300; */
 }
 
 .banner-info  h3{
@@ -62,10 +59,6 @@
 .banner-contain ul {
     margin: 0;
     padding: 0;
-    /* list-style: none; */
-    /* padding-right: 10%; */
-    /* background-color: red; */
-    /* margin: auto; */
 }
 
 .banner-contain ul li {
@@ -104,4 +97,98 @@
 .fa-instagram {
     background: #125688;
     color: white;
+}
+
+@media (max-width: 768px) {
+    .banner-info {
+        margin-top: 5%;
+    }
+
+    .banner-info  h3{
+        font-size: 20px;
+        font-weight: lighter;
+      }
+      
+    .banner-info  h1{
+        font-size: 26px;
+        font-weight: bolder;
+    }
+    
+    .banner-info  p{
+        font-size: 15px;
+        font-weight: lighter;
+        padding-bottom: 20px;
+    }
+    
+
+    .fa {
+        padding: 5px;
+        font-size: 10px;
+        width: 15px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 20%;
+        margin: 8px;
+    }
+}
+    
+@media (max-width: 425px) {
+    .banner-contain {
+        color: white;
+        width: 100%;
+    }
+
+    .banner-profile {
+        position: relative;
+        background-color: black;
+        border-radius: 50%;
+    }
+
+    .banner-profile div {
+        overflow: hidden;
+        border-radius: 50%;
+        opacity: 0.8;
+        height: 0;
+        padding-bottom: 100%;
+    }
+
+    .banner-info {
+        position: absolute;
+        text-align: center;
+        right: 15%;
+        top: 20%;
+        opacity: 0.8;
+    }
+
+    .banner-info  h3{
+        font-size: 20px;
+        font-weight: lighter;
+      }
+      
+    .banner-info  h1{
+        font-size: 26px;
+        font-weight: bolder;
+    }
+    
+    .banner-info  p{
+        font-size: 15px;
+        font-weight: lighter;
+        padding-bottom: 20px;
+    }
+
+    .fa {
+        padding: 5px;
+        font-size: 10px;
+        width: 15px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 20%;
+        margin: 8px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .banner-info {
+        margin-top: 4%;
+    }
 }
